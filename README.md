@@ -1,6 +1,6 @@
 # AngularTabs
 
-![Alt Text](https://i.gifer.com/3OAey.gif)
+![demo](https://im7.ezgif.com/tmp/ezgif-7-faf3c16a4e2f.webp)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.1.
 
