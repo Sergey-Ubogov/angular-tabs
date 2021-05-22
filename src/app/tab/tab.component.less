@@ -1,0 +1,73 @@
+:host(.tab) {
+  &.selected .title {
+    background-color: #fff;
+    border-color: #fff;
+    z-index: 10;
+
+    &:after {
+      background: radial-gradient(
+          circle at right top,
+          transparent 7px,
+          #fff 7px
+        ),
+        radial-gradient(circle at right top, transparent 6px, #fff 6px);
+    }
+  }
+
+  &.selected:not(:first-child) .title:before {
+    position: absolute;
+    z-index: 6;
+    left: -7px;
+    bottom: -1px;
+    content: "";
+    width: 7px;
+    height: 7px;
+
+    background: radial-gradient(circle at left top, transparent 7px, #fff 7px),
+      radial-gradient(circle at left top, transparent 6px, #fff 6px);
+  }
+}
+
+.title {
+  position: relative;
+  width: 140px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: #c4c4c4;
+  border: 1px solid #a8a7a7;
+  border-bottom: 0;
+  cursor: pointer;
+  user-select: none;
+
+  &:after {
+    position: absolute;
+    z-index: 6;
+    right: -7px;
+    bottom: -1px;
+    content: "";
+    width: 7px;
+    height: 7px;
+
+    background: radial-gradient(
+        circle at right top,
+        transparent 7px,
+        #c4c4c4 7px
+      ),
+      radial-gradient(circle at right top, transparent 6px, #a8a7a7 6px);
+  }
+}
+
+.content {
+  padding: 25px;
+  position: absolute;
+  left: 0;
+  z-index: 10;
+  width: 900px;
+  height: 300px;
+  background-color: #fff;
+}
